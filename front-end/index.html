@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Data Pribadi</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container-xl" >
+
+        <h3><i class="bi bi-person-vcard"></i> Aplikasi Data Pribadi</h3>
+
+        <div class="container p-4">
+            <div class="mb-3">
+                <label for="nik" class="form-label">NIK</label>
+                <input type="text" class="form-control" id="nik" placeholder="">
+            </div>
+            
+            <div class="mb-3">
+                <label for="name" class="form-label">Nama</label>
+                <input type="text" class="form-control" id="name" placeholder="">
+            </div>
+        </div>
+
+        <div class="button-container mt-4 mb-4">
+            <button class="btn btn-primary" id="searchBtn" type="reset">Search</button>
+            <button class="btn btn-primary" id="btn-form" type="submit">Add</button>
+        </div>
+
+        <div class="table-container mt-4 mb-4">
+            <table class="table table-bordered text-center">
+                <thead class="table-primary">
+                    <tr>
+                        <th>No</th>
+                        <th>NIK</th>
+                        <th>Nama Lengkap</th>
+                        <th>Umur</th>
+                        <th>Tanggal Lahir</th>
+                        <th>Jenis Kelamin</th>
+                        <th>Alamat</th>
+                        <th>Negara</th>
+                        <th>Action
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <div class="modal fade" id="addDataModal" tabindex="-1" aria-labelledby="addDataModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><i class="bi bi-person-vcard"></i> Aplikasi Data Pribadi</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="addDataForm">
+                        <h6 class="form-title mb-3">Tambah Data Pribadi</h6>
+    
+                        <div class="mb-3">
+                            <label for="nik-form" class="form-label">NIK</label>
+                            <input type="text" class="form-control" id="nik-form" placeholder="">
+                            <div id="alertNik" class="mt-2"></div> <!-- Tempat alert NIK -->
+                        </div>
+    
+                        <div class="mb-3">
+                            <label for="fullname" class="form-label">Nama Lengkap</label>
+                            <input type="text" class="form-control" id="fullname" placeholder="">
+                            <div id="alertName" class="mt-2"></div> <!-- Tempat alert Nama -->
+                        </div>
+    
+                        <div class="mb-3">
+                            <label class="form-label">Jenis Kelamin</label>
+                            <div>
+                                <input type="radio" name="gender" id="male" value="Laki-Laki" class="form-check-input">
+                                <label for="male" class="form-check-label">Laki-Laki</label>
+                                
+                                <input type="radio" name="gender" id="female" value="Perempuan" class="form-check-input ms-3">
+                                <label for="female" class="form-check-label">Perempuan</label>
+                            </div>
+                        </div>
+    
+                        <div class="mb-3">
+                            <label for="ttl" class="form-label">Tanggal Lahir</label>
+                            <input type="date" class="form-control" id="ttl">
+                        </div>
+    
+                        <div class="mb-3">
+                            <label for="modalAlamat" class="form-label">Alamat</label>
+                            <textarea class="form-control" id="modalAlamat" rows="3" placeholder=""></textarea>
+                        </div>
+    
+                        <div class="mb-3">
+                            <label for="modalNegara" class="form-label">Negara</label>
+                            <select class="form-control" id="modalNegara">
+                                <option value="" disabled selected>Pilih Negara</option>
+                                <option value="Indonesia">Indonesia</option>
+                                <option value="Malaysia">Malaysia</option>
+                                <option value="Singapura">Singapura</option>
+                                <option value="USA">USA</option>
+                            </select>                            
+                        </div>
+                    </form>
+                </div>
+    
+                <div class="modal-footer d-flex justify-content-start">
+                    <button id="saveData" class="btn btn-primary" type="button" >Simpan</button>
+                    <button id="back" class="btn btn-secondary" type="button" data-bs-dismiss="modal">Kembali</button>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+    <div id="successMessage" class="success-message"></div>
+    <div id="warningMessage" class="warning-message"></div>
+
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

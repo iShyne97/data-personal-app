@@ -1,0 +1,96 @@
+.container-xl{
+    margin-top: 50px;
+    border: 1px solid black;
+}
+
+.container{
+    margin-top: 20px;
+    background-color: #fce4d6;
+    border: 1px solid #eab99a;
+}
+
+.button-container {
+    /* background-color: red; */
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.btn {
+    width: 120px;
+    height: 40px;
+}
+
+.btn-text {
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.btn-text.detail { color: #fd7e14 ; } 
+.btn-text.edit { color: #0d6efd;; }
+.btn-text.hapus { color: #dc3545; } 
+
+.btn-text:hover {
+    text-decoration: underline;
+}
+
+.table-container {
+    background-color: yellow;
+}
+
+.table-bordered {
+    border-color: black !important; 
+}
+
+th, td {
+    border: 1px solid black !important;
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 6"><path d="M0 0h10L5 6z" fill="%23000000"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+    padding-right: 30px;
+}
+
+
+.modal-footer {
+    border-top: none !important;
+}
+
+.success-message {
+    position: fixed;
+    bottom: 10px; /* Jarak dari bawah */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #28a745; /* Warna hijau sukses */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: none; /* Awalnya disembunyikan */
+    z-index: 1000; /* Agar tidak tertutup elemen lain */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.warning-message {
+    position: fixed;
+    bottom: 10px; /* Jarak dari bawah */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ff7207; /* Warna kuning/oranye */
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: none; /* Awalnya disembunyikan */
+    z-index: 1000; /* Agar tidak tertutup elemen lain */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+}
+
