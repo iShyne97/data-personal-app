@@ -17,6 +17,8 @@ Make sure you have the following installed on your system:
       spring.datasource.username=your_username  
       spring.datasource.password=your_password  
       spring.jpa.hibernate.ddl-auto=update  
+      spring.jpa.show-sql=true
+      server.port=8090
 
 3️⃣ Running the Back-End (Spring Boot API)
 -Navigate to the back-end folder
@@ -41,8 +43,8 @@ Make sure you have the following installed on your system:
 
 🔧 API Endpoints (Spring Boot)
 Method	  Endpoint	          Description
-GET	      /api/data	          Retrieve all data
-GET       /api/data/find      Find data by NIK & Name
-POST	    /api/data	          Add new data
-PUT	      /api/data/{nik}	    Update data
-DELETE	  /api/data/{nik}    	Delete data
+GET	        /api/data	          Retrieve all data
+GET           /api/data/find      Find data by NIK & Name
+POST	        /api/data	          Add new data
+PUT	        /api/data/{nik}	    Update data
+DELETE	  /api/data/{nik}     Delete data
