@@ -1,0 +1,14 @@
+/home/ishyne/project/application-test/data-personal-app/back-end/src/main/java/com/personalapp/AgraSaputraApplication.java
+/home/ishyne/project/application-test/data-personal-app/back-end/src/main/java/com/personalapp/controller/DataPersonalController.java
+/home/ishyne/project/application-test/data-personal-app/back-end/src/main/java/com/personalapp/dto/ResponseWrapper.java
+/home/ishyne/project/application-test/data-personal-app/back-end/src/main/java/com/personalapp/dto/request/DataPersonalDTO.java
+/home/ishyne/project/application-test/data-personal-app/back-end/src/main/java/com/personalapp/exception/DataNotFoundException.java
+/home/ishyne/project/application-test/data-personal-app/back-end/src/main/java/com/personalapp/exception/GlobalExceptionHandler.java
+/home/ishyne/project/application-test/data-personal-app/back-end/src/main/java/com/personalapp/exception/NikAlreadyExistException.java
+/home/ishyne/project/application-test/data-personal-app/back-end/src/main/java/com/personalapp/exception/NoDataFoundException.java
+/home/ishyne/project/application-test/data-personal-app/back-end/src/main/java/com/personalapp/model/DataPersonal.java
+/home/ishyne/project/application-test/data-personal-app/back-end/src/main/java/com/personalapp/repository/DataPersonalRepository.java
+/home/ishyne/project/application-test/data-personal-app/back-end/src/main/java/com/personalapp/service/DataPersonalService.java
+/home/ishyne/project/application-test/data-personal-app/back-end/src/main/java/com/personalapp/service/implementation/DataPersonalServiceImpl.java
+/home/ishyne/project/application-test/data-personal-app/back-end/src/main/java/com/personalapp/util/DateUtil.java
+/home/ishyne/project/application-test/data-personal-app/back-end/src/main/java/com/personalapp/util/ResponseUtil.java
